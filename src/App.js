@@ -10,7 +10,8 @@ function handleClickGetUser() {
 
 function handleClickListUser() {
   let c = new ServiceUser();
-  c.listUsers();
+  let page = prompt('page', 2);
+  c.listUsers(page);
 }
 
 function handleClickCreateUser() {

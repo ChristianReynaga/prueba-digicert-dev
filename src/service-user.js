@@ -13,13 +13,13 @@ export class ServiceUser {
       .catch((error) => console.log('error', error));
   }
 
-  listUsers() {
+  listUsers(page) {
     var requestOptions = {
       method: 'GET',
       redirect: 'follow',
     };
 
-    fetch('https://reqres.in/api/users?page=2', requestOptions)
+    fetch('https://reqres.in/api/users?page=' + page, requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log('error', error));

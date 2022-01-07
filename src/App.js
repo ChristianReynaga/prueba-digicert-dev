@@ -27,15 +27,21 @@ export default function App() {
       <h1>USUARIOS</h1>
 
       <div>
-        <button onClick={handleClickGetUser}>OBTENER USUARIO</button>
+        <button className="margen" onClick={handleClickGetUser}>
+          OBTENER USUARIO
+        </button>
       </div>
 
       <div>
-        <button onClick={handleClickListUser}>LISTAR USUARIO</button>
+        <button className="margen" onClick={handleClickListUser}>
+          LISTAR USUARIO
+        </button>
       </div>
 
       <div>
-        <button onClick={handleClickCreateUser}>CREAR USUARIO</button>
+        <button className="margen" onClick={handleClickCreateUser}>
+          CREAR USUARIO
+        </button>
       </div>
     </div>
   );
